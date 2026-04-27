@@ -18,3 +18,27 @@ export type {
 export { formatDuration } from "./duration.js";
 export { pathsOverlap, detectOverlaps } from "./overlap.js";
 export type { OverlapReport } from "./overlap.js";
+export type {
+  UsageRecord,
+  BudgetPeriod,
+  BudgetCap,
+  BudgetConfig,
+  SpendSummary,
+  BudgetStatus,
+  BudgetStatusLevel,
+} from "./budget.js";
+export type {
+  ContextHealthConfig,
+  ContextHealthLevel,
+  ContextHealthResult,
+} from "./context.js";
+export type {
+  ApprovalTier,
+  ApprovalRule,
+  ApprovalProjectConfig,
+  ApprovalConfig,
+  PendingApproval,
+  ApprovalMethod,
+  ApprovalDecision,
+  ResolvedApproval,
+} from "./approval.js";

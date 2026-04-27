@@ -52,6 +52,71 @@ export interface EventPayloadMap {
     branch: string;
     path: string;
   };
+  "budget.usage_recorded": {
+    session_id: string;
+    model: string;
+    input_tokens: number;
+    output_tokens: number;
+    cache_read_tokens: number;
+    cache_creation_tokens: number;
+    estimated_cost_usd: number;
+  };
+  "budget.threshold_reached": {
+    session_id: string;
+    project: string;
+    spent_usd: number;
+    soft_cap_usd: number;
+    period: string;
+  };
+  "budget.cap_exceeded": {
+    session_id: string;
+    project: string;
+    spent_usd: number;
+    hard_cap_usd: number;
+    period: string;
+  };
+  "budget.reset": {
+    project: string;
+    period: string;
+  };
+  "context.warn": {
+    session_id: string;
+    context_window_percent: number;
+    threshold: number;
+  };
+  "context.critical": {
+    session_id: string;
+    context_window_percent: number;
+    threshold: number;
+  };
+  "approval.requested": {
+    session_id: string;
+    approval_id: string;
+    tool: string;
+    tier: string;
+    timeout_at: string | null;
+  };
+  "approval.auto_approved": {
+    session_id: string;
+    tool: string;
+    tier: string;
+  };
+  "approval.timeout_approved": {
+    session_id: string;
+    approval_id: string;
+    tool: string;
+  };
+  "approval.human_approved": {
+    session_id: string;
+    approval_id: string;
+    tool: string;
+  };
+  "approval.rejected": {
+    session_id: string;
+    approval_id: string;
+    tool: string;
+    reason: string | null;
+  };
   [key: string]: Record<string, unknown>;
 }
 
@@ -79,6 +144,17 @@ export const KNOWN_EVENT_TYPES = [
   "worktree.merge_failed",
   "worktree.stale_detected",
   "worktree.cleaned",
+  "budget.usage_recorded",
+  "budget.threshold_reached",
+  "budget.cap_exceeded",
+  "budget.reset",
+  "context.warn",
+  "context.critical",
+  "approval.requested",
+  "approval.auto_approved",
+  "approval.timeout_approved",
+  "approval.human_approved",
+  "approval.rejected",
 ] as const;
 
 export type KnownEventType = (typeof KNOWN_EVENT_TYPES)[number];

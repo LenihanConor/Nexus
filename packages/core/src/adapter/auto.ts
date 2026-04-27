@@ -4,6 +4,8 @@ import { getNexusDir } from "../audit/emitter.js";
 import { createSession, endSession, updateSession } from "../session/lifecycle.js";
 import { parseHookStdin } from "./hooks.js";
 import type { HookInput } from "./hooks.js";
+import { checkAndAlert, resetAlertState } from "../context/index.js";
+import { recordUsage } from "../budget/lifecycle.js";
 
 function activeDir(): string {
   return join(getNexusDir(), "active");
@@ -77,6 +79,39 @@ export async function autoCheckpoint(claudeSessionId: string, event: string, inp
       notes: parsed.notes ?? null,
     },
   });
+
+  const contextWindowPercent =
+    typeof (input as Record<string, unknown>).context_window_percent === "number"
+      ? (input as Record<string, unknown>).context_window_percent as number
+      : typeof ((input as Record<string, unknown>).context as Record<string, unknown> | undefined)?.window_percent === "number"
+        ? ((input as Record<string, unknown>).context as Record<string, unknown>).window_percent as number
+        : undefined;
+
+  if (contextWindowPercent !== undefined && contextWindowPercent > 0) {
+    await checkAndAlert(mapping.nexusSessionId, mapping.project, contextWindowPercent);
+  }
+
+  // Record token usage if present in hook input
+  const raw = input as Record<string, unknown>;
+  const usage = raw["usage"] as Record<string, unknown> | undefined;
+  const inputTokens = typeof usage?.["input_tokens"] === "number" ? usage["input_tokens"] : 0;
+  const outputTokens = typeof usage?.["output_tokens"] === "number" ? usage["output_tokens"] : 0;
+  const cacheReadTokens = typeof usage?.["cache_read_input_tokens"] === "number" ? usage["cache_read_input_tokens"] : 0;
+  const cacheCreationTokens = typeof usage?.["cache_creation_input_tokens"] === "number" ? usage["cache_creation_input_tokens"] : 0;
+  const model = typeof raw["model"] === "string" ? raw["model"] : "claude-sonnet-4-6";
+
+  if (inputTokens > 0 || outputTokens > 0 || cacheReadTokens > 0 || cacheCreationTokens > 0) {
+    await recordUsage({
+      session_id: mapping.nexusSessionId,
+      project: mapping.project,
+      agent_type: "claude-code",
+      model,
+      input_tokens: inputTokens,
+      output_tokens: outputTokens,
+      cache_read_tokens: cacheReadTokens,
+      cache_creation_tokens: cacheCreationTokens,
+    });
+  }
 }
 
 export async function autoEnd(claudeSessionId: string): Promise<void> {
@@ -87,5 +122,6 @@ export async function autoEnd(claudeSessionId: string): Promise<void> {
     status: "completed",
   });
 
+  resetAlertState(mapping.nexusSessionId);
   await removeMapping(claudeSessionId);
 }

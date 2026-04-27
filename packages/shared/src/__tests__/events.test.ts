@@ -39,7 +39,7 @@ describe("Event Schema", () => {
     expect(event.payload.foo).toBe("bar");
   });
 
-  it("includes all Phase 1 event types in KNOWN_EVENT_TYPES", () => {
+  it("includes all known event types in KNOWN_EVENT_TYPES", () => {
     expect(KNOWN_EVENT_TYPES).toContain("audit.started");
     expect(KNOWN_EVENT_TYPES).toContain("audit.cleanup");
     expect(KNOWN_EVENT_TYPES).toContain("session.started");
@@ -51,7 +51,19 @@ describe("Event Schema", () => {
     expect(KNOWN_EVENT_TYPES).toContain("worktree.merge_failed");
     expect(KNOWN_EVENT_TYPES).toContain("worktree.stale_detected");
     expect(KNOWN_EVENT_TYPES).toContain("worktree.cleaned");
-    expect(KNOWN_EVENT_TYPES).toHaveLength(11);
+    // Additional event types for budget, context health, and approval systems
+    expect(KNOWN_EVENT_TYPES).toContain("budget.usage_recorded");
+    expect(KNOWN_EVENT_TYPES).toContain("budget.threshold_reached");
+    expect(KNOWN_EVENT_TYPES).toContain("budget.cap_exceeded");
+    expect(KNOWN_EVENT_TYPES).toContain("budget.reset");
+    expect(KNOWN_EVENT_TYPES).toContain("context.warn");
+    expect(KNOWN_EVENT_TYPES).toContain("context.critical");
+    expect(KNOWN_EVENT_TYPES).toContain("approval.requested");
+    expect(KNOWN_EVENT_TYPES).toContain("approval.auto_approved");
+    expect(KNOWN_EVENT_TYPES).toContain("approval.timeout_approved");
+    expect(KNOWN_EVENT_TYPES).toContain("approval.human_approved");
+    expect(KNOWN_EVENT_TYPES).toContain("approval.rejected");
+    expect(KNOWN_EVENT_TYPES).toHaveLength(22);
   });
 
   it("NexusEvent has all required fields", () => {

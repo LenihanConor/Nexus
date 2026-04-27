@@ -4,6 +4,9 @@ import { updateSession } from "../session/lifecycle.js";
 import { parseHookStdin } from "../adapter/hooks.js";
 import { autoStart, autoCheckpoint, autoEnd } from "../adapter/auto.js";
 import type { HookInput } from "../adapter/hooks.js";
+import { loadApprovalConfig } from "../approval/config.js";
+import { classifyToolCall } from "../approval/rules.js";
+import { requestApproval } from "../approval/enforcer.js";
 
 function readStdin(): Promise<HookInput> {
   return new Promise((resolve) => {
@@ -37,6 +40,26 @@ adapterCommand
     try {
       const input = await readStdin();
       const claudeSessionId = input.session_id;
+
+      // Approval enforcement for PreToolUse events
+      if (opts.event === "PreToolUse") {
+        try {
+          const tool = input.tool_name ?? "";
+          const args = (input.tool_input as Record<string, unknown>) ?? {};
+          const sessionId = opts.session ?? claudeSessionId ?? "";
+
+          const config = await loadApprovalConfig();
+          const tier = classifyToolCall(tool, args, opts.project, config);
+          const decision = await requestApproval(sessionId, opts.project, tool, args, tier, config);
+
+          if (!decision.approved) {
+            process.exit(1);
+            return;
+          }
+        } catch {
+          // Fail open — never block the agent on approval errors
+        }
+      }
 
       if (opts.session) {
         const session = await getSession(opts.session);
