@@ -39,6 +39,14 @@ Work items sourced from completed research sessions. Ordered by phase and depend
 
 ---
 
+## Ideas (not yet researched)
+
+| Item | Type | Notes |
+|------|------|-------|
+| SessionStart hook tracking | Feature (Agent Adapter) | Track console/session open via Claude Code `SessionStart` hook, not just first tool use. Gives true session-open signal separate from active thinking. Revisit when session granularity becomes important. |
+
+---
+
 ## Deferred (needs re-evaluation before speccing)
 
 | Item | Type | Size | Research | Notes |
