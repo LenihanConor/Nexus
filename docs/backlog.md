@@ -23,9 +23,9 @@ Work items sourced from completed research sessions. Ordered by phase and depend
 
 | Item | Type | Size | Research | Notes |
 |------|------|------|----------|-------|
-| Budget & Token Metering | System | M | [ai_dev_orch](research/ai_dev_orch/summary.md) | Depends on Session Registry; tracks token usage + cost, soft/hard caps per project |
-| Approval Policy Engine | System | M | [ai_dev_orch](research/ai_dev_orch/summary.md) | Depends on Audit Trail + Session Registry; rule-based auto-approve vs. human review routing |
-| Context Health Monitor | System | S | [ai_dev_orch](research/ai_dev_orch/summary.md) | Monitors context window health; checkpoint-and-restart on threshold |
+| Budget & Token Metering | System | M | [ai_dev_orch](research/ai_dev_orch/summary.md) | Spec Approved — ready to implement |
+| Context Health Monitor | System | S | [ai_dev_orch](research/ai_dev_orch/summary.md) | Spec Approved — ready to implement |
+| Approval Policy Engine | System | M | [ai_dev_orch](research/ai_dev_orch/summary.md) | Spec Approved — ready to implement |
 | Spec & Backlog Lifecycle Manager | System | M | [ai_dev_orch](research/ai_dev_orch/summary.md) | Managed backlog + spec lifecycle; promotes ideas → research → spec |
 
 ---
