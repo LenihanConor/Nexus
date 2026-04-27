@@ -63,7 +63,10 @@ function RecentSessions({ sessions }: { sessions: SessionRecord[] }) {
                 <span className="text-gray-300">{s.task_description}</span>
                 <span className="text-gray-600 ml-2">{s.agent_type}</span>
               </div>
-              <StatusBadge status={s.status} />
+              <div className="flex items-center gap-2 shrink-0">
+                <span className="text-gray-500 text-xs font-mono">{s.project.split(/[/\\]/).pop()}</span>
+                <StatusBadge status={s.status} />
+              </div>
             </div>
           ))}
         </div>
