@@ -85,6 +85,10 @@ export function deduplicateRecords<T extends { id: string }>(records: T[]): T[] 
   return Array.from(map.values());
 }
 
+function normaliseProject(p: string): string {
+  return p.replace(/\\/g, "/");
+}
+
 function deriveProjects(
   sessions: SessionRecord[],
   worktrees: WorktreeRecord[],
@@ -92,13 +96,13 @@ function deriveProjects(
 ): string[] {
   const projects = new Set<string>();
   for (const s of sessions) {
-    if (s.project) projects.add(s.project);
+    if (s.project) projects.add(normaliseProject(s.project));
   }
   for (const w of worktrees) {
-    if (w.project) projects.add(w.project);
+    if (w.project) projects.add(normaliseProject(w.project));
   }
   for (const e of events) {
-    if (e.project) projects.add(e.project);
+    if (e.project) projects.add(normaliseProject(e.project));
   }
   return Array.from(projects).sort();
 }
@@ -229,9 +233,10 @@ export class DataCache {
     let events = this.events;
 
     if (filters?.project) {
-      sessions = sessions.filter((s) => s.project === filters.project);
-      worktrees = worktrees.filter((w) => w.project === filters.project);
-      events = events.filter((e) => e.project === filters.project);
+      const project = normaliseProject(filters.project);
+      sessions = sessions.filter((s) => normaliseProject(s.project) === project);
+      worktrees = worktrees.filter((w) => normaliseProject(w.project) === project);
+      events = events.filter((e) => e.project && normaliseProject(e.project) === project);
     }
 
     return {
@@ -268,9 +273,10 @@ export class DataCache {
     let worktrees = this.worktrees;
 
     if (filters?.project) {
-      sessions = sessions.filter((s) => s.project === filters.project);
-      worktrees = worktrees.filter((w) => w.project === filters.project);
-      events = events.filter((e) => e.project === filters.project);
+      const project = normaliseProject(filters.project);
+      sessions = sessions.filter((s) => normaliseProject(s.project) === project);
+      worktrees = worktrees.filter((w) => normaliseProject(w.project) === project);
+      events = events.filter((e) => e.project && normaliseProject(e.project) === project);
     }
 
     return {
