@@ -34,7 +34,7 @@ Core is a **global orchestrator** — it tracks every agent action across all pr
 |--------|-------------|------|--------|
 | Budget & Token Metering | Per-task token tracking, cost metering, and budget enforcement (soft/hard caps) | @docs/specs/systems/nexus-core/budget-metering.md | Approved |
 | Context Health Monitor | Monitors active sessions for context window degradation; alerts via CLI and dashboard at configurable thresholds | @docs/specs/systems/nexus-core/context-health-monitor.md | Approved |
-| Approval Policy Engine | Rule-based decision routing — auto-approve routine actions, queue critical ones for human review | TBD | Planned |
+| Approval Policy Engine | Rule-based tool call classification and enforcement — auto-approve routine, timeout constrained, block standard and critical | @docs/specs/systems/nexus-core/approval-policy-engine.md | Approved |
 | Spec & Backlog Manager | Structured ideation backlog with lifecycle tracking for specs and research items | TBD | Planned |
 
 ## Application-Specific Architecture
