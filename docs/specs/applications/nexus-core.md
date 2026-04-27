@@ -22,6 +22,12 @@ Core is a **global orchestrator** — it tracks every agent action across all pr
 | Worktree Isolation | Git worktree manager that automatically isolates concurrent agent tasks and detects file-level conflicts | @docs/specs/systems/nexus-core/worktree-isolation.md | Done |
 | Session Registry | Tracks every agent session — identity, parent lineage, state snapshots, and lifecycle | @docs/specs/systems/nexus-core/session-registry.md | Done |
 
+### Phase 1.5 — Integration Layer
+
+| System | Description | Spec | Status |
+|--------|-------------|------|--------|
+| Agent Adapter | Wraps CLI-LLM agent invocations — registers sessions, creates worktrees, emits audit events, cleans up on completion. Agent-agnostic interface with Claude Code as first integration | @docs/specs/systems/nexus-core/agent-adapter.md | Done |
+
 ### Phase 2 — Control Layer (Future)
 
 | System | Description | Spec | Status |

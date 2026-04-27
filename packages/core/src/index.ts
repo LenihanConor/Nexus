@@ -50,3 +50,29 @@ export {
   startSessionStaleDetection,
   stopSessionStaleDetection,
 } from "./session/index.js";
+
+export {
+  BaseAdapter,
+  GenericAdapter,
+  ClaudeCodeAdapter,
+  registerAdapter,
+  getAdapter,
+  listAdapters,
+  runAgent,
+  mapExitToStatus,
+  generateHookConfig,
+  installHooks,
+  removeHooks,
+  parseHookStdin,
+} from "./adapter/index.js";
+export type {
+  AgentAdapter,
+  AdapterStartOpts,
+  AdapterSession,
+  AdapterSnapshot,
+  AdapterResult,
+  RunnerOpts,
+  RunnerResult,
+  HookInput,
+  ParsedHookData,
+} from "./adapter/index.js";
