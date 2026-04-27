@@ -25,8 +25,8 @@ Developers using CLI-LLM tools lose control once they move beyond single-agent, 
 
 | Application | Description | Spec | Status |
 |-------------|-------------|------|--------|
-| Nexus Core | CLI and orchestration engine -- audit trail, worktree isolation, session registry, budget/approval systems | @docs/specs/applications/nexus-core.md | Planned |
-| Nexus Dashboard | Local web UI -- visual layer over Core's data, real-time session views, event timelines | @docs/specs/applications/nexus-dashboard.md | Planned |
+| Nexus Core | CLI and orchestration engine -- audit trail, worktree isolation, session registry, budget/approval systems | @docs/specs/applications/nexus-core.md | Active |
+| Nexus Dashboard | Local web UI -- visual layer over Core's data, real-time session views, event timelines | @docs/specs/applications/nexus-dashboard.md | Done |
 
 ## Shared Codebase
 

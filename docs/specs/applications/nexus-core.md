@@ -18,9 +18,9 @@ Core is a **global orchestrator** — it tracks every agent action across all pr
 
 | System | Description | Spec | Status |
 |--------|-------------|------|--------|
-| Audit Trail | Append-only structured event log capturing every significant action across all systems | @docs/specs/systems/nexus-core/audit-trail.md | Planned |
-| Worktree Isolation | Git worktree manager that automatically isolates concurrent agent tasks and detects file-level conflicts | @docs/specs/systems/nexus-core/worktree-isolation.md | Planned |
-| Session Registry | Tracks every agent session — identity, parent lineage, state snapshots, and lifecycle | @docs/specs/systems/nexus-core/session-registry.md | Planned |
+| Audit Trail | Append-only structured event log capturing every significant action across all systems | @docs/specs/systems/nexus-core/audit-trail.md | Done |
+| Worktree Isolation | Git worktree manager that automatically isolates concurrent agent tasks and detects file-level conflicts | @docs/specs/systems/nexus-core/worktree-isolation.md | Done |
+| Session Registry | Tracks every agent session — identity, parent lineage, state snapshots, and lifecycle | @docs/specs/systems/nexus-core/session-registry.md | Done |
 
 ### Phase 2 — Control Layer (Future)
 
@@ -132,4 +132,4 @@ The adapter is agent-agnostic at the interface level, with optional agent-specif
 
 ## Status
 
-`Approved`
+`Active`
