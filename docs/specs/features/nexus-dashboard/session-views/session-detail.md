@@ -38,13 +38,13 @@ function getSessionDetail(data: DashboardData, sessionId: string): {
 
 | # | Task | Status |
 |---|------|--------|
-| 1 | Implement SessionDetail component with metadata header | Not Started |
-| 2 | Implement SnapshotTimeline component (vertical timeline with expand/collapse) | Not Started |
-| 3 | Implement associated worktree section with link to worktree detail | Not Started |
-| 4 | Implement session events section (filtered event list) | Not Started |
-| 5 | Wire up navigation links (parent, correlation, lineage, events) | Not Started |
-| 6 | Add 404 handling for invalid session IDs | Not Started |
-| 7 | Add tests: detail rendering, snapshot collapse, missing session, navigation | Not Started |
+| 1 | Implement SessionDetail component with metadata header | Done |
+| 2 | Implement SnapshotTimeline component (vertical timeline with expand/collapse) | Done |
+| 3 | Implement associated worktree section with link to worktree detail | Done |
+| 4 | Implement session events section (filtered event list) | Done |
+| 5 | Wire up navigation links (parent, correlation, lineage, events) | Done |
+| 6 | Add 404 handling for invalid session IDs | Done |
+| 7 | Add tests: detail rendering, snapshot collapse, missing session, navigation | Done |
 
 ## Open Questions
 
@@ -66,4 +66,4 @@ None.
 
 ## Status
 
-`Approved`
+`Done`

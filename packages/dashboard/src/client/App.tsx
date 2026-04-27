@@ -2,13 +2,15 @@ import { useState } from "react";
 import { Routes, Route } from "react-router";
 import { Shell } from "./Shell.js";
 import { Overview } from "./views/Overview.js";
-import { Sessions } from "./views/Sessions.js";
+import { SessionList } from "./views/sessions/SessionList.js";
+import { SessionDetail } from "./views/sessions/SessionDetail.js";
+import { SessionLineage } from "./views/sessions/SessionLineage.js";
 import { Events } from "./views/Events.js";
 import { Worktrees } from "./views/Worktrees.js";
 import { DashboardContext, useDashboardData } from "./hooks.js";
 import { registerView } from "./registry.js";
 
-registerView({ id: "sessions", label: "Sessions", route: "/sessions", order: 1, component: Sessions });
+registerView({ id: "sessions", label: "Sessions", route: "/sessions", order: 1, component: SessionList });
 registerView({ id: "events", label: "Events", route: "/events", order: 2, component: Events });
 registerView({ id: "worktrees", label: "Worktrees", route: "/worktrees", order: 3, component: Worktrees });
 
@@ -25,7 +27,9 @@ export function App() {
       <Routes>
         <Route element={<Shell />}>
           <Route index element={<Overview />} />
-          <Route path="sessions" element={<Sessions />} />
+          <Route path="sessions" element={<SessionList />} />
+          <Route path="sessions/:id" element={<SessionDetail />} />
+          <Route path="sessions/:id/lineage" element={<SessionLineage />} />
           <Route path="events" element={<Events />} />
           <Route path="worktrees" element={<Worktrees />} />
         </Route>

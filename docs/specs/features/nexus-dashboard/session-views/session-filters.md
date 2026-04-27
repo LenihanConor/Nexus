@@ -44,12 +44,12 @@ function paramsToFilters(params: URLSearchParams): SessionFilters;
 
 | # | Task | Status |
 |---|------|--------|
-| 1 | Implement SessionFilters component with status, agent, time range controls | Not Started |
-| 2 | Implement URL query param serialization/deserialization | Not Started |
-| 3 | Implement free-text search input with debounce | Not Started |
-| 4 | Implement "Clear all filters" button | Not Started |
-| 5 | Derive available agent types from loaded session data | Not Started |
-| 6 | Add tests: filter combination, URL sync, clear, debounce | Not Started |
+| 1 | Implement SessionFilters component with status, agent, time range controls | Done |
+| 2 | Implement URL query param serialization/deserialization | Done |
+| 3 | Implement free-text search input with debounce | Done |
+| 4 | Implement "Clear all filters" button | Done |
+| 5 | Derive available agent types from loaded session data | Done |
+| 6 | Add tests: filter combination, URL sync, clear, debounce | Done |
 
 ## Open Questions
 
@@ -72,4 +72,4 @@ None.
 
 ## Status
 
-`Approved`
+`Done`

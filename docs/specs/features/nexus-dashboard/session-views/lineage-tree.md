@@ -43,13 +43,13 @@ interface SessionTreeNode {
 
 | # | Task | Status |
 |---|------|--------|
-| 1 | Implement LineageTree component with CSS-indented tree rendering | Not Started |
-| 2 | Implement tree node component with status colour, task summary, duration | Not Started |
-| 3 | Implement expand/collapse for deep trees (default depth 3) | Not Started |
-| 4 | Highlight current session node | Not Started |
-| 5 | Wire click-to-navigate on tree nodes | Not Started |
-| 6 | Build tree structure from flat session data using `buildSessionTree()` from shared | Not Started |
-| 7 | Add tests: tree rendering, depth limits, collapse/expand, current highlight | Not Started |
+| 1 | Implement LineageTree component with CSS-indented tree rendering | Done |
+| 2 | Implement tree node component with status colour, task summary, duration | Done |
+| 3 | Implement expand/collapse for deep trees (default depth 3) | Done |
+| 4 | Highlight current session node | Done |
+| 5 | Wire click-to-navigate on tree nodes | Done |
+| 6 | Build tree structure from flat session data | Done |
+| 7 | Add tests: tree rendering, depth limits, collapse/expand, current highlight | Done |
 
 ## Open Questions
 
@@ -72,4 +72,4 @@ None.
 
 ## Status
 
-`Approved`
+`Done`

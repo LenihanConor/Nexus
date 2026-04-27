@@ -43,14 +43,14 @@ function getSessionList(data: DashboardData, filters: SessionFilters): SessionRe
 
 | # | Task | Status |
 |---|------|--------|
-| 1 | Implement SessionList component with table rendering | Not Started |
-| 2 | Implement column sorting (click header to toggle) | Not Started |
-| 3 | Implement SessionFilters component (status, agent, time range dropdowns) | Not Started |
-| 4 | Implement pagination (20 per page) | Not Started |
-| 5 | Implement SessionStatusBadge component (colour + symbol) | Not Started |
-| 6 | Implement stale session banner | Not Started |
-| 7 | Implement free-text search | Not Started |
-| 8 | Add tests: filtering, sorting, pagination, empty state, stale banner | Not Started |
+| 1 | Implement SessionList component with table rendering | Done |
+| 2 | Implement column sorting (click header to toggle) | Done |
+| 3 | Implement SessionFilters component (status, agent, time range dropdowns) | Done |
+| 4 | Implement pagination (20 per page) | Done |
+| 5 | Implement SessionStatusBadge component (colour + symbol) | Done |
+| 6 | Implement stale session banner | Done |
+| 7 | Implement free-text search | Done |
+| 8 | Add tests: filtering, sorting, pagination, empty state, stale banner | Done |
 
 ## Open Questions
 
@@ -73,4 +73,4 @@ None.
 
 ## Status
 
-`Approved`
+`Done`

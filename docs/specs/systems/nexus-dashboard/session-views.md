@@ -14,10 +14,10 @@ This is where the Session Registry's data becomes human-readable. The developer 
 
 | Feature | Description | Spec | Status |
 |---------|-------------|------|--------|
-| Session List | Filterable, sortable table of sessions with status indicators, project, agent type, and duration | @docs/specs/features/nexus-dashboard/session-views/session-list.md | Planned |
-| Session Detail | Drilldown view showing full session record, snapshots timeline, associated worktrees and events | @docs/specs/features/nexus-dashboard/session-views/session-detail.md | Planned |
-| Lineage Tree | Visual tree rendering of parent-child session relationships with status colouring | @docs/specs/features/nexus-dashboard/session-views/lineage-tree.md | Planned |
-| Session Filters | Filter by status, project, agent type, time range; combinable; persists during navigation | @docs/specs/features/nexus-dashboard/session-views/session-filters.md | Planned |
+| Session List | Filterable, sortable table of sessions with status indicators, project, agent type, and duration | @docs/specs/features/nexus-dashboard/session-views/session-list.md | Done |
+| Session Detail | Drilldown view showing full session record, snapshots timeline, associated worktrees and events | @docs/specs/features/nexus-dashboard/session-views/session-detail.md | Done |
+| Lineage Tree | Visual tree rendering of parent-child session relationships with status colouring | @docs/specs/features/nexus-dashboard/session-views/lineage-tree.md | Done |
+| Session Filters | Filter by status, project, agent type, time range; combinable; persists during navigation | @docs/specs/features/nexus-dashboard/session-views/session-filters.md | Done |
 
 ## Public Interfaces
 
@@ -280,4 +280,4 @@ SessionsView/
 
 ## Status
 
-`Approved`
+`Done`
