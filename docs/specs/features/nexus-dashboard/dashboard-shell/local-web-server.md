@@ -64,12 +64,12 @@ interface DashboardSummary {
 
 | # | Task | Status |
 |---|------|--------|
-| 1 | Set up `packages/dashboard` package (package.json, tsconfig) | Not Started |
-| 2 | Implement HTTP server with static file serving and API routes | Not Started |
-| 3 | Implement port detection and fallback logic | Not Started |
-| 4 | Implement browser auto-open on startup | Not Started |
-| 5 | Add config loading for port, open-on-start settings | Not Started |
-| 6 | Add tests: server start, port fallback, API responses, config override | Not Started |
+| 1 | Set up `packages/dashboard` package (package.json, tsconfig) | Done |
+| 2 | Implement HTTP server with static file serving and API routes | Done |
+| 3 | Implement port detection and fallback logic | Done |
+| 4 | Implement browser auto-open on startup | Done |
+| 5 | Add config loading for port, open-on-start settings | Done |
+| 6 | Add tests: server start, port fallback, API responses, config override | Done |
 
 ## Open Questions
 
@@ -96,4 +96,4 @@ None.
 
 ## Status
 
-`Approved`
+`Done`

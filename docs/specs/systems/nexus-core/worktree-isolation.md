@@ -250,4 +250,4 @@ Recovery is **offered, not forced** — the stale worktree may contain uncommitt
 
 ## Status
 
-`Approved`
+`Done`

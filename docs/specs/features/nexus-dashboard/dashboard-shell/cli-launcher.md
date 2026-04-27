@@ -46,13 +46,13 @@ nexus dashboard status
 
 | # | Task | Status |
 |---|------|--------|
-| 1 | Add `nexus dashboard` command to CLI framework | Not Started |
-| 2 | Implement foreground start with graceful Ctrl+C shutdown | Not Started |
-| 3 | Implement `--background` mode with detached child process and PID file | Not Started |
-| 4 | Implement `nexus dashboard stop` — read PID, send SIGTERM, clean up PID file | Not Started |
-| 5 | Implement `nexus dashboard status` — check PID file and process liveness | Not Started |
-| 6 | Implement duplicate detection — check PID file before starting | Not Started |
-| 7 | Add tests: start, stop, status, duplicate prevention, PID file management | Not Started |
+| 1 | Add `nexus dashboard` command to CLI framework | Done |
+| 2 | Implement foreground start with graceful Ctrl+C shutdown | Done |
+| 3 | Implement `--background` mode with detached child process and PID file | Done |
+| 4 | Implement `nexus dashboard stop` — read PID, send SIGTERM, clean up PID file | Done |
+| 5 | Implement `nexus dashboard status` — check PID file and process liveness | Done |
+| 6 | Implement duplicate detection — check PID file before starting | Done |
+| 7 | Add tests: start, stop, status, duplicate prevention, PID file management | Done |
 
 ## Open Questions
 
@@ -75,4 +75,4 @@ None.
 
 ## Status
 
-`Approved`
+`Done`

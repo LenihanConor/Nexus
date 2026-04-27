@@ -62,14 +62,14 @@ function deriveProjects(data: DataCache): string[];
 
 | # | Task | Status |
 |---|------|--------|
-| 1 | Implement `mtime` checking — `fs.stat` for each tracked file | Not Started |
-| 2 | Implement file reading with shared JSONL utilities and malformed line skipping | Not Started |
-| 3 | Implement `deduplicateRecords()` for sessions and worktrees | Not Started |
-| 4 | Implement `loadInitialData()` — full read of all current files | Not Started |
-| 5 | Implement `pollForChanges()` — mtime check, selective re-read, cache update | Not Started |
-| 6 | Implement polling timer with configurable interval | Not Started |
-| 7 | Implement `deriveProjects()` and `DashboardSummary` computation | Not Started |
-| 8 | Add tests: mtime change detection, deduplication, missing files, poll cycle | Not Started |
+| 1 | Implement `mtime` checking — `fs.stat` for each tracked file | Done |
+| 2 | Implement file reading with shared JSONL utilities and malformed line skipping | Done |
+| 3 | Implement `deduplicateRecords()` for sessions and worktrees | Done |
+| 4 | Implement `loadInitialData()` — full read of all current files | Done |
+| 5 | Implement `pollForChanges()` — mtime check, selective re-read, cache update | Done |
+| 6 | Implement polling timer with configurable interval | Done |
+| 7 | Implement `deriveProjects()` and `DashboardSummary` computation | Done |
+| 8 | Add tests: mtime change detection, deduplication, missing files, poll cycle | Done |
 
 ## Open Questions
 
@@ -97,4 +97,4 @@ None.
 
 ## Status
 
-`Approved`
+`Done`

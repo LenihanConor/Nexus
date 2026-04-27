@@ -14,12 +14,12 @@ It handles: starting/stopping the server, serving the frontend, reading JSONL fi
 
 | Feature | Description | Spec | Status |
 |---------|-------------|------|--------|
-| Local Web Server | HTTP server on `localhost:<port>` serving frontend assets and a data API | @docs/specs/features/nexus-dashboard/dashboard-shell/local-web-server.md | Planned |
-| Application Layout | Page shell with header, sidebar navigation, main content area, and status bar | @docs/specs/features/nexus-dashboard/dashboard-shell/application-layout.md | Planned |
-| Data Polling Layer | Background polling of `~/.nexus/` JSONL files at configurable interval; parsed data available to all views | @docs/specs/features/nexus-dashboard/dashboard-shell/data-polling-layer.md | Planned |
-| Global Project Filter | Dropdown in header to filter all views by project; default shows all; persists across navigation | @docs/specs/features/nexus-dashboard/dashboard-shell/global-project-filter.md | Planned |
-| View Registry | Mechanism for view systems to register routes, nav items, and components | @docs/specs/features/nexus-dashboard/dashboard-shell/view-registry.md | Planned |
-| CLI Launcher | `nexus dashboard` command to start the server; `nexus dashboard stop` to stop it | @docs/specs/features/nexus-dashboard/dashboard-shell/cli-launcher.md | Planned |
+| Local Web Server | HTTP server on `localhost:<port>` serving frontend assets and a data API | @docs/specs/features/nexus-dashboard/dashboard-shell/local-web-server.md | Done |
+| Application Layout | Page shell with header, sidebar navigation, main content area, and status bar | @docs/specs/features/nexus-dashboard/dashboard-shell/application-layout.md | Done |
+| Data Polling Layer | Background polling of `~/.nexus/` JSONL files at configurable interval; parsed data available to all views | @docs/specs/features/nexus-dashboard/dashboard-shell/data-polling-layer.md | Done |
+| Global Project Filter | Dropdown in header to filter all views by project; default shows all; persists across navigation | @docs/specs/features/nexus-dashboard/dashboard-shell/global-project-filter.md | Done |
+| View Registry | Mechanism for view systems to register routes, nav items, and components | @docs/specs/features/nexus-dashboard/dashboard-shell/view-registry.md | Done |
+| CLI Launcher | `nexus dashboard` command to start the server; `nexus dashboard stop` to stop it | @docs/specs/features/nexus-dashboard/dashboard-shell/cli-launcher.md | Done |
 
 ## Public Interfaces
 
@@ -268,4 +268,4 @@ The Overview is built into the shell (not a separate view system). It aggregates
 
 ## Status
 
-`Approved`
+`Done`

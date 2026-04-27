@@ -1,0 +1,37 @@
+{
+  "name": "@nexus/dashboard",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "main": "./dist/server/index.js",
+  "types": "./dist/server/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/server/index.d.ts",
+      "import": "./dist/server/index.js"
+    }
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.server.json && vite build",
+    "build:server": "tsc -p tsconfig.server.json",
+    "build:client": "vite build",
+    "dev:client": "vite",
+    "clean": "rm -rf dist"
+  },
+  "dependencies": {
+    "@hono/node-server": "^2.0.0",
+    "@nexus/shared": "workspace:*",
+    "hono": "^4.12.15",
+    "react": "^19.2.5",
+    "react-dom": "^19.2.5",
+    "react-router": "^7.14.2"
+  },
+  "devDependencies": {
+    "@tailwindcss/vite": "^4.2.4",
+    "@types/react": "^19.2.14",
+    "@types/react-dom": "^19.2.3",
+    "@vitejs/plugin-react": "^6.0.1",
+    "tailwindcss": "^4.2.4",
+    "vite": "^8.0.10"
+  }
+}

@@ -41,13 +41,13 @@ interface ShellProps {
 
 | # | Task | Status |
 |---|------|--------|
-| 1 | Choose and set up SPA framework (React, Svelte, or Preact) | Not Started |
-| 2 | Implement Shell component — header, sidebar, content area, status bar | Not Started |
-| 3 | Implement sidebar navigation with view registration | Not Started |
-| 4 | Implement status bar with summary counts | Not Started |
-| 5 | Set up CSS/styling approach (Tailwind, CSS modules, or plain CSS) | Not Started |
-| 6 | Add client-side routing for view navigation | Not Started |
-| 7 | Add tests: layout renders, nav highlights active view, status bar updates | Not Started |
+| 1 | Choose and set up SPA framework (React, Svelte, or Preact) | Done |
+| 2 | Implement Shell component — header, sidebar, content area, status bar | Done |
+| 3 | Implement sidebar navigation with view registration | Done |
+| 4 | Implement status bar with summary counts | Done |
+| 5 | Set up CSS/styling approach (Tailwind, CSS modules, or plain CSS) | Done |
+| 6 | Add client-side routing for view navigation | Done |
+| 7 | Add tests: layout renders, nav highlights active view, status bar updates | Done |
 
 ## Open Questions
 
@@ -71,4 +71,4 @@ None.
 
 ## Status
 
-`Approved`
+`Done`

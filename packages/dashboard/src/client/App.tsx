@@ -1,0 +1,35 @@
+import { useState } from "react";
+import { Routes, Route } from "react-router";
+import { Shell } from "./Shell.js";
+import { Overview } from "./views/Overview.js";
+import { Sessions } from "./views/Sessions.js";
+import { Events } from "./views/Events.js";
+import { Worktrees } from "./views/Worktrees.js";
+import { DashboardContext, useDashboardData } from "./hooks.js";
+import { registerView } from "./registry.js";
+
+registerView({ id: "sessions", label: "Sessions", route: "/sessions", order: 1, component: Sessions });
+registerView({ id: "events", label: "Events", route: "/events", order: 2, component: Events });
+registerView({ id: "worktrees", label: "Worktrees", route: "/worktrees", order: 3, component: Worktrees });
+
+export function App() {
+  const [project, setProject] = useState<string | null>(() => {
+    const params = new URLSearchParams(window.location.search);
+    return params.get("project");
+  });
+
+  const { data, summary, loading } = useDashboardData(project);
+
+  return (
+    <DashboardContext value={{ data, summary, project, setProject, loading }}>
+      <Routes>
+        <Route element={<Shell />}>
+          <Route index element={<Overview />} />
+          <Route path="sessions" element={<Sessions />} />
+          <Route path="events" element={<Events />} />
+          <Route path="worktrees" element={<Worktrees />} />
+        </Route>
+      </Routes>
+    </DashboardContext>
+  );
+}

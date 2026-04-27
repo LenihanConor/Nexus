@@ -40,11 +40,11 @@ function getRegisteredViews(): DashboardView[];
 
 | # | Task | Status |
 |---|------|--------|
-| 1 | Implement view registry (array of view definitions with register/get functions) | Not Started |
-| 2 | Wire registry to sidebar navigation rendering | Not Started |
-| 3 | Wire registry to client-side router for route → component mapping | Not Started |
-| 4 | Register Overview as the default `/` route within the shell | Not Started |
-| 5 | Add tests: view registration, nav rendering, route resolution | Not Started |
+| 1 | Implement view registry (array of view definitions with register/get functions) | Done |
+| 2 | Wire registry to sidebar navigation rendering | Done |
+| 3 | Wire registry to client-side router for route → component mapping | Done |
+| 4 | Register Overview as the default `/` route within the shell | Done |
+| 5 | Add tests: view registration, nav rendering, route resolution | Done |
 
 ## Open Questions
 
@@ -66,4 +66,4 @@ None.
 
 ## Status
 
-`Approved`
+`Done`

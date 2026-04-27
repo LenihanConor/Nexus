@@ -40,12 +40,12 @@ interface ProjectFilterState {
 
 | # | Task | Status |
 |---|------|--------|
-| 1 | Implement project dropdown component in the header | Not Started |
-| 2 | Derive available projects from `DashboardData.projects` | Not Started |
-| 3 | Implement filter state persistence (URL query param `?project=`) | Not Started |
-| 4 | Wire filter to API calls — pass `project` param to `/api/data` and `/api/summary` | Not Started |
-| 5 | Load default project from config if set | Not Started |
-| 6 | Add tests: filter selection, persistence, API param passing, empty state | Not Started |
+| 1 | Implement project dropdown component in the header | Done |
+| 2 | Derive available projects from `DashboardData.projects` | Done |
+| 3 | Implement filter state persistence (URL query param `?project=`) | Done |
+| 4 | Wire filter to API calls — pass `project` param to `/api/data` and `/api/summary` | Done |
+| 5 | Load default project from config if set | Done |
+| 6 | Add tests: filter selection, persistence, API param passing, empty state | Done |
 
 ## Open Questions
 
@@ -68,4 +68,4 @@ None.
 
 ## Status
 
-`Approved`
+`Done`
