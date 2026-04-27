@@ -47,12 +47,12 @@ function paramsToFilters(params: URLSearchParams): EventFilters;
 
 | # | Task | Status |
 |---|------|--------|
-| 1 | Implement EventFilters component with type, session, agent, correlation controls | Not Started |
-| 2 | Implement event type dropdown with category grouping | Not Started |
-| 3 | Implement URL query param serialization/deserialization | Not Started |
-| 4 | Implement free-text search with debounce (300ms) | Not Started |
-| 5 | Implement "Clear all filters" button | Not Started |
-| 6 | Add tests: filter combination, URL sync, clear, category grouping | Not Started |
+| 1 | Implement EventFilters component with type, session, agent, correlation controls | Done |
+| 2 | Implement event type dropdown with category grouping | Done |
+| 3 | Implement URL query param serialization/deserialization | Done |
+| 4 | Implement free-text search with debounce (300ms) | Done |
+| 5 | Implement "Clear all filters" button | Done |
+| 6 | Add tests: filter combination, URL sync, clear, category grouping | Done |
 
 ## Open Questions
 
@@ -74,4 +74,4 @@ None.
 
 ## Status
 
-`Approved`
+`Done`

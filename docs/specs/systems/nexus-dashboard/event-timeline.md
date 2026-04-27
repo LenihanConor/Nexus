@@ -12,10 +12,10 @@ Event Timeline owns the chronological event stream view in the Dashboard. It ren
 
 | Feature | Description | Spec | Status |
 |---------|-------------|------|--------|
-| Event Stream | Chronological scrollable list of events with type icons, timestamps, and summary text | @docs/specs/features/nexus-dashboard/event-timeline/event-stream.md | Planned |
-| Event Detail | Expandable/click-through view showing the full event payload as formatted JSON | @docs/specs/features/nexus-dashboard/event-timeline/event-detail.md | Planned |
-| Event Filters | Filter by project, session, agent, event type, correlation ID, and time range; combinable | @docs/specs/features/nexus-dashboard/event-timeline/event-filters.md | Planned |
-| Live Tail Mode | Auto-scroll to latest events as they arrive via polling; toggle on/off | @docs/specs/features/nexus-dashboard/event-timeline/live-tail-mode.md | Planned |
+| Event Stream | Chronological scrollable list of events with type icons, timestamps, and summary text | @docs/specs/features/nexus-dashboard/event-timeline/event-stream.md | Done |
+| Event Detail | Expandable/click-through view showing the full event payload as formatted JSON | @docs/specs/features/nexus-dashboard/event-timeline/event-detail.md | Done |
+| Event Filters | Filter by project, session, agent, event type, correlation ID, and time range; combinable | @docs/specs/features/nexus-dashboard/event-timeline/event-filters.md | Done |
+| Live Tail Mode | Auto-scroll to latest events as they arrive via polling; toggle on/off | @docs/specs/features/nexus-dashboard/event-timeline/live-tail-mode.md | Done |
 
 ## Public Interfaces
 
@@ -270,4 +270,4 @@ EventsView/
 
 ## Status
 
-`Approved`
+`Done`

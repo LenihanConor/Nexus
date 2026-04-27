@@ -35,12 +35,12 @@ interface LiveTailState {
 
 | # | Task | Status |
 |---|------|--------|
-| 1 | Implement LiveTailToggle component | Not Started |
-| 2 | Implement auto-scroll behavior when enabled | Not Started |
-| 3 | Implement "N new events" indicator when disabled and new events arrive | Not Started |
-| 4 | Implement click-to-scroll on the new events indicator | Not Started |
-| 5 | Track new event count between data refreshes | Not Started |
-| 6 | Add tests: toggle behavior, auto-scroll, new event indicator, filter interaction | Not Started |
+| 1 | Implement LiveTailToggle component | Done |
+| 2 | Implement auto-scroll behavior when enabled | Done |
+| 3 | Implement "N new events" indicator when disabled and new events arrive | Done |
+| 4 | Implement click-to-scroll on the new events indicator | Done |
+| 5 | Track new event count between data refreshes | Done |
+| 6 | Add tests: toggle behavior, auto-scroll, new event indicator, filter interaction | Done |
 
 ## Open Questions
 
@@ -63,4 +63,4 @@ None.
 
 ## Status
 
-`Approved`
+`Done`

@@ -35,14 +35,14 @@ Uses `summarizeEvent()` from `packages/shared` for human-readable summaries.
 
 | # | Task | Status |
 |---|------|--------|
-| 1 | Implement EventStream component with event list rendering | Not Started |
-| 2 | Implement EventRow component (timestamp, icon, type, summary) | Not Started |
-| 3 | Implement EventTypeIcon component (category-based icon mapping) | Not Started |
-| 4 | Implement EventSummary using shared `summarizeEvent()` | Not Started |
-| 5 | Implement sort toggle (newest/oldest first) | Not Started |
-| 6 | Implement pagination (50 per page) | Not Started |
-| 7 | Implement time range selector with quick presets and custom date picker | Not Started |
-| 8 | Add tests: rendering, sorting, pagination, time range, empty state | Not Started |
+| 1 | Implement EventStream component with event list rendering | Done |
+| 2 | Implement EventRow component (timestamp, icon, type, summary) | Done |
+| 3 | Implement EventTypeIcon component (category-based icon mapping) | Done |
+| 4 | Implement EventSummary using shared `summarizeEvent()` | Done |
+| 5 | Implement sort toggle (newest/oldest first) | Done |
+| 6 | Implement pagination (50 per page) | Done |
+| 7 | Implement time range selector with quick presets and custom date picker | Done |
+| 8 | Add tests: rendering, sorting, pagination, time range, empty state | Done |
 
 ## Open Questions
 
@@ -65,4 +65,4 @@ None.
 
 ## Status
 
-`Approved`
+`Done`

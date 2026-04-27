@@ -36,12 +36,12 @@ function getEventDetail(data: DashboardData, eventId: string): {
 
 | # | Task | Status |
 |---|------|--------|
-| 1 | Implement EventDetail component with inline expand/collapse | Not Started |
-| 2 | Implement JSON payload rendering with syntax highlighting | Not Started |
-| 3 | Implement payload collapse for large payloads (>10 keys) | Not Started |
-| 4 | Implement ID field linkification (detect `_id` fields, link to appropriate views) | Not Started |
-| 5 | Add navigation links to associated session and worktree | Not Started |
-| 6 | Add tests: expand/collapse, JSON rendering, linkification, large payloads | Not Started |
+| 1 | Implement EventDetail component with inline expand/collapse | Done |
+| 2 | Implement JSON payload rendering with syntax highlighting | Done |
+| 3 | Implement payload collapse for large payloads (>10 keys) | Done |
+| 4 | Implement ID field linkification (detect `_id` fields, link to appropriate views) | Done |
+| 5 | Add navigation links to associated session and worktree | Done |
+| 6 | Add tests: expand/collapse, JSON rendering, linkification, large payloads | Done |
 
 ## Open Questions
 
@@ -63,4 +63,4 @@ None.
 
 ## Status
 
-`Approved`
+`Done`
