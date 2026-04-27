@@ -12,10 +12,10 @@ Worktree Status owns the visual representation of git worktrees in the Dashboard
 
 | Feature | Description | Spec | Status |
 |---------|-------------|------|--------|
-| Worktree List | Worktrees grouped by project with status indicators, branch names, and owning sessions | @docs/specs/features/nexus-dashboard/worktree-status/worktree-list.md | Planned |
-| Worktree Detail | Drilldown view showing full record, scope, merge result, associated session and events | @docs/specs/features/nexus-dashboard/worktree-status/worktree-detail.md | Planned |
-| Conflict Indicators | Visual highlighting when two active worktrees in the same project have overlapping scope | @docs/specs/features/nexus-dashboard/worktree-status/conflict-indicators.md | Planned |
-| Stale Warnings | Banner and visual indicators for orphaned worktrees that need cleanup | @docs/specs/features/nexus-dashboard/worktree-status/stale-warnings.md | Planned |
+| Worktree List | Worktrees grouped by project with status indicators, branch names, and owning sessions | @docs/specs/features/nexus-dashboard/worktree-status/worktree-list.md | Done |
+| Worktree Detail | Drilldown view showing full record, scope, merge result, associated session and events | @docs/specs/features/nexus-dashboard/worktree-status/worktree-detail.md | Done |
+| Conflict Indicators | Visual highlighting when two active worktrees in the same project have overlapping scope | @docs/specs/features/nexus-dashboard/worktree-status/conflict-indicators.md | Done |
+| Stale Warnings | Banner and visual indicators for orphaned worktrees that need cleanup | @docs/specs/features/nexus-dashboard/worktree-status/stale-warnings.md | Done |
 
 ## Public Interfaces
 
@@ -305,4 +305,4 @@ WorktreesView/
 
 ## Status
 
-`Approved`
+`Done`

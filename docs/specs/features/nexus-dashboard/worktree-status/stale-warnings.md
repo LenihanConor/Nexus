@@ -32,12 +32,12 @@ function getStaleWorktrees(data: DashboardData): WorktreeRecord[];
 
 | # | Task | Status |
 |---|------|--------|
-| 1 | Implement StaleWarningBanner component | Not Started |
-| 2 | Implement collapsed banner for 10+ stale worktrees | Not Started |
-| 3 | Implement "View all" link (filters list to stale status) | Not Started |
-| 4 | Implement CLI command display with copy button | Not Started |
-| 5 | Implement pulsing orange indicator for stale rows in the list | Not Started |
-| 6 | Add tests: banner rendering, collapse threshold, filter link, no-stale state | Not Started |
+| 1 | Implement StaleWarningBanner component | Done |
+| 2 | Implement collapsed banner for 10+ stale worktrees | Done |
+| 3 | Implement "View all" link (filters list to stale status) | Done |
+| 4 | Implement CLI command display with copy button | Done |
+| 5 | Implement pulsing orange indicator for stale rows in the list | Done |
+| 6 | Add tests: banner rendering, collapse threshold, filter link, no-stale state | Done |
 
 ## Open Questions
 
@@ -59,4 +59,4 @@ None.
 
 ## Status
 
-`Approved`
+`Done`

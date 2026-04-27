@@ -39,13 +39,13 @@ interface WorktreeFilters {
 
 | # | Task | Status |
 |---|------|--------|
-| 1 | Implement WorktreeList component with project grouping | Not Started |
-| 2 | Implement WorktreeProjectGroup component (collapsible section) | Not Started |
-| 3 | Implement WorktreeRow component (status, branch, agent, session link, scope) | Not Started |
-| 4 | Implement WorktreeStatusBadge component (colour + symbol) | Not Started |
-| 5 | Implement status filter with "Show cleaned" toggle | Not Started |
-| 6 | Implement group sorting (active projects first) | Not Started |
-| 7 | Add tests: grouping, sorting, filtering, collapse/expand, empty state | Not Started |
+| 1 | Implement WorktreeList component with project grouping | Done |
+| 2 | Implement WorktreeProjectGroup component (collapsible section) | Done |
+| 3 | Implement WorktreeRow component (status, branch, agent, session link, scope) | Done |
+| 4 | Implement WorktreeStatusBadge component (colour + symbol) | Done |
+| 5 | Implement status filter with "Show cleaned" toggle | Done |
+| 6 | Implement group sorting (active projects first) | Done |
+| 7 | Add tests: grouping, sorting, filtering, collapse/expand, empty state | Done |
 
 ## Open Questions
 
@@ -69,4 +69,4 @@ None.
 
 ## Status
 
-`Approved`
+`Done`

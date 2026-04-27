@@ -39,14 +39,14 @@ function getWorktreeDetail(data: DashboardData, worktreeId: string): {
 
 | # | Task | Status |
 |---|------|--------|
-| 1 | Implement WorktreeDetail component with metadata header | Not Started |
-| 2 | Implement ScopeList component with overlap highlighting | Not Started |
-| 3 | Implement merge result section (success view and conflict view) | Not Started |
-| 4 | Implement owning session section with link | Not Started |
-| 5 | Implement worktree events section | Not Started |
-| 6 | Implement path truncation with tooltip | Not Started |
-| 7 | Add 404 handling for invalid worktree IDs | Not Started |
-| 8 | Add tests: detail rendering, overlap highlighting, merge results, missing worktree | Not Started |
+| 1 | Implement WorktreeDetail component with metadata header | Done |
+| 2 | Implement ScopeList component with overlap highlighting | Done |
+| 3 | Implement merge result section (success view and conflict view) | Done |
+| 4 | Implement owning session section with link | Done |
+| 5 | Implement worktree events section | Done |
+| 6 | Implement path truncation with tooltip | Done |
+| 7 | Add 404 handling for invalid worktree IDs | Done |
+| 8 | Add tests: detail rendering, overlap highlighting, merge results, missing worktree | Done |
 
 ## Open Questions
 
@@ -69,4 +69,4 @@ None.
 
 ## Status
 
-`Approved`
+`Done`

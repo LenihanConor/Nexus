@@ -40,12 +40,12 @@ Uses `pathsOverlap()` from `packages/shared` (same logic as Core's Conflict Dete
 
 | # | Task | Status |
 |---|------|--------|
-| 1 | Move `pathsOverlap()` to `packages/shared` (if not already there from Core implementation) | Not Started |
-| 2 | Implement client-side `detectOverlaps()` using shared path logic | Not Started |
-| 3 | Implement OverlapBadge component (amber `⚠ OVERLAP` with tooltip) | Not Started |
-| 4 | Implement conflict banner at project group level | Not Started |
-| 5 | Implement overlap detail expansion (both worktrees + specific paths) | Not Started |
-| 6 | Add tests: overlap detection, badge rendering, banner, no-overlap case | Not Started |
+| 1 | Move `pathsOverlap()` to `packages/shared` (if not already there from Core implementation) | Done |
+| 2 | Implement client-side `detectOverlaps()` using shared path logic | Done |
+| 3 | Implement OverlapBadge component (amber `⚠ OVERLAP` with tooltip) | Done |
+| 4 | Implement conflict banner at project group level | Done |
+| 5 | Implement overlap detail expansion (both worktrees + specific paths) | Done |
+| 6 | Add tests: overlap detection, badge rendering, banner, no-overlap case | Done |
 
 ## Open Questions
 
@@ -67,4 +67,4 @@ None.
 
 ## Status
 
-`Approved`
+`Done`

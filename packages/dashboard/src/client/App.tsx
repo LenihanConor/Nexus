@@ -6,13 +6,14 @@ import { SessionList } from "./views/sessions/SessionList.js";
 import { SessionDetail } from "./views/sessions/SessionDetail.js";
 import { SessionLineage } from "./views/sessions/SessionLineage.js";
 import { EventStream } from "./views/events/EventStream.js";
-import { Worktrees } from "./views/Worktrees.js";
+import { WorktreeList } from "./views/worktrees/WorktreeList.js";
+import { WorktreeDetail } from "./views/worktrees/WorktreeDetail.js";
 import { DashboardContext, useDashboardData } from "./hooks.js";
 import { registerView } from "./registry.js";
 
 registerView({ id: "sessions", label: "Sessions", route: "/sessions", order: 1, component: SessionList });
 registerView({ id: "events", label: "Events", route: "/events", order: 2, component: EventStream });
-registerView({ id: "worktrees", label: "Worktrees", route: "/worktrees", order: 3, component: Worktrees });
+registerView({ id: "worktrees", label: "Worktrees", route: "/worktrees", order: 3, component: WorktreeList });
 
 export function App() {
   const [project, setProject] = useState<string | null>(() => {
@@ -31,7 +32,8 @@ export function App() {
           <Route path="sessions/:id" element={<SessionDetail />} />
           <Route path="sessions/:id/lineage" element={<SessionLineage />} />
           <Route path="events" element={<EventStream />} />
-          <Route path="worktrees" element={<Worktrees />} />
+          <Route path="worktrees" element={<WorktreeList />} />
+          <Route path="worktrees/:id" element={<WorktreeDetail />} />
         </Route>
       </Routes>
     </DashboardContext>

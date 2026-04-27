@@ -16,10 +16,10 @@ Dashboard is **read-only**. It does not create sessions, worktrees, or events. I
 
 | System | Description | Spec | Status |
 |--------|-------------|------|--------|
-| Dashboard Shell | Local web server, application layout, navigation, near-real-time data refresh | @docs/specs/systems/nexus-dashboard/dashboard-shell.md | Planned |
-| Session Views | Session list, detail drilldown, lineage tree visualisation, status filtering | @docs/specs/systems/nexus-dashboard/session-views.md | Planned |
-| Event Timeline | Chronological event stream with filtering by project, session, agent, event type, and time range | @docs/specs/systems/nexus-dashboard/event-timeline.md | Planned |
-| Worktree Status | Active worktrees per project, conflict indicators, merge status, stale worktree warnings | @docs/specs/systems/nexus-dashboard/worktree-status.md | Planned |
+| Dashboard Shell | Local web server, application layout, navigation, near-real-time data refresh | @docs/specs/systems/nexus-dashboard/dashboard-shell.md | Done |
+| Session Views | Session list, detail drilldown, lineage tree visualisation, status filtering | @docs/specs/systems/nexus-dashboard/session-views.md | Done |
+| Event Timeline | Chronological event stream with filtering by project, session, agent, event type, and time range | @docs/specs/systems/nexus-dashboard/event-timeline.md | Done |
+| Worktree Status | Active worktrees per project, conflict indicators, merge status, stale worktree warnings | @docs/specs/systems/nexus-dashboard/worktree-status.md | Done |
 
 ## Application-Specific Architecture
 
@@ -138,4 +138,4 @@ Future option: Core could emit filesystem events (via `fs.watch`) that Dashboard
 
 ## Status
 
-`Approved`
+`Done`

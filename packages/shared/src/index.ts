@@ -16,3 +16,5 @@ export type {
   SessionTreeNode,
 } from "./session.js";
 export { formatDuration } from "./duration.js";
+export { pathsOverlap, detectOverlaps } from "./overlap.js";
+export type { OverlapReport } from "./overlap.js";
