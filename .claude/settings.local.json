@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(cp /c/GitHub/Nexus/.claude/skills/research-explore.md /c/GitHub/Nexus/.claude/commands/research-explore.md)",
+      "Bash(cp /c/GitHub/Nexus/.claude/skills/research-ideate.md /c/GitHub/Nexus/.claude/commands/research-ideate.md)",
+      "Bash(cp /c/GitHub/Nexus/.claude/skills/research-evaluate.md /c/GitHub/Nexus/.claude/commands/research-evaluate.md)",
+      "Bash(cp /c/GitHub/Nexus/.claude/skills/research-choose.md /c/GitHub/Nexus/.claude/commands/research-choose.md)",
+      "Bash(git -C /c/GitHub/Nexus init)",
+      "Bash(git branch *)",
+      "Bash(git add *)"
+    ],
+    "deny": []
+  }
+}
